@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  background-color: #dbdbdb;
+  justify-content: center;
+}
+
+.navbar .nav-item {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .nav-highlight {
+  position: absolute;
+  background-color: #ff6b6b;
+  height: 30px;
+  top: 50%;
+  border-radius: 8px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  padding: 20px 15px;
+  transition: all 0.3s ease;
+
+}

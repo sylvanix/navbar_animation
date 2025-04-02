@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Project</a>
+        <a href="#" class="nav-item">Contact</a>
+        <a href="#" class="nav-item">Profil</a>
+        <div class="nav-highlight"></div>
+    </nav>
+
+    <script>
+
+const links = document.querySelectorAll('.nav-item');
+const highlight = document.querySelector('.nav-highlight');
+
+highlight.style.width = links[0].offsetWidth + 'px';
+highlight.style.left = links[0].offsetLeft + 'px';
+
+links.forEach(link =>{
+    link.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        highlight.style.width = link.offsetWidth + 'px';
+        highlight.style.left = link.offsetLeft + 'px';
+    })
+})
+
+    </script>
+</body>
+</html>
